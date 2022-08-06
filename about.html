@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de"
+
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Die Kommissarin</title>
+
+    <script type="text/javascript">
+        writeRandomQuote = function () {
+          var quotes = new Array();
+          quotes[0] = "Action is the real measure of intelligence.";
+          quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+          quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+          quotes[3] = "A good head and a good heart are always a formidable combination.";
+          quotes[4] = "I love kitties!" 
+          quotes[5] = "MOAR cat food!"
+          var rand = Math.floor(Math.random()*quotes.length);
+          document.write(quotes[rand]);
+        }
+        writeRandomQuote();
+      </script>
+
+      
+<script type="text/javascript">
+    function showDate() {
+      var d = new Date();
+      var curr_date = d.getDate();
+      var curr_month = d.getMonth() + 1; //months are zero based
+      var curr_year = d.getFullYear();
+      document.write(curr_date + "-" + curr_month + "-" + curr_year);
+    }
+  </script>
+</head> 
+
+<body>
+<h1> Die Kommissarin</h1>
+<p>Heldin der Webentwicklung, Meisterin der Lösungsfindung.
+
+<!--Ursprünglich wurden bei mir die Umlaute nicht richtig angezeigt. Das habe ich gelöst.-->
+<h2>Der mysteriöse Fall der verschwundenen Umlaute</h2>
+<p>"Meine Freunde, meine Freunde - wo sind sie nur?!"</p>
+<p><script type="text/javascript">showDate();</script></p>
+
+<p>Mein liebstes Zitat:  <script type="text/javascript">writeRandomQuote();</script> </p>
+
+<p> <button> Der mysteriöse Fall der verschwundenen Umlaute </button> </p>
+<a href="index.html">Zum ersten Fall</a href>
+
+</body>
+</html>

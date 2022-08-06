@@ -1,0 +1,21 @@
+body{
+background-color: #cccccc;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+p{
+    text-decoration: underline;
+}
+
+    
+a{
+    font-size: larger;
+    font-weight: bold;
+}
+button{
+    border-style: dashed
+}
+
+.my-superclass {
+    text-decoration: overline;
+    background-color: aliceblue;
+}
